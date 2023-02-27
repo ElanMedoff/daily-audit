@@ -1,0 +1,20 @@
+{
+  "name": "daily-audit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix api/\" \"npm run dev --prefix client/\"",
+    "build": "npm run build --prefix client/",
+    "push": "git push origin master",
+    "deploy": "git push server",
+    "test": "npm run test --prefix api/ && npm run test --prefix script/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/ElanMedoff/daily-audit#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
